@@ -19,6 +19,8 @@ from pyrogram import __version__ as pyrover
 from pytgcalls import (__version__ as pytover)
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
+TECHNO_IMG = "https://telegra.ph/file/5d56e3be97cd1ad92997b.mp4"
+
 __major__ = 0
 __minor__ = 2
 __micro__ = 1
@@ -52,8 +54,8 @@ async def _human_time_duration(seconds):
     command(["start", f"art@{BOT_USERNAME}"]) & filters.private & ~filters.edited
 )
 async def text_(client: Client, message: Message):
-    await message.reply_text(
-        f"""✨ **Welcome {message.from_user.mention()} !**\n
+    await message.reply_video(
+        TECHNO_IMG, caption= f"""✨ **Welcome {message.from_user.mention()} !**\n
 💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **Allows you to play music and video on groups through the new Telegram's video chats!**
 
 💡 **Find out all the Bot's commands and how they work by clicking on the » 📚 Commands button!**
@@ -64,26 +66,26 @@ async def text_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕",
+                        "➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
                 
                 [
-                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤️ Donate", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="cbcmds"),
+                    InlineKeyboardButton("❤️ ᴅᴏɴᴀᴛᴇ", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "💖 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "💖 ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "😎 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "😎 ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "😍 Source Code", url="https://github.com/darkphoenix2601/M.V._PLAYER"
+                        "🔱 ᴏᴡɴᴇʀ 🔱", url="https://t.me/mkspali"
                     )
                 ],
             ]

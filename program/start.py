@@ -90,7 +90,6 @@ async def text_(client: Client, message: Message):
                 ],
             ]
         ),
-        disable_web_page_preview=False,
     )
 @Client.on_message(
     command(["alive", f"alive@{BOT_USERNAME}"]) & filters.private & ~filters.edited

@@ -19,7 +19,7 @@ from pyrogram import __version__ as pyrover
 from pytgcalls import (__version__ as pytover)
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-TECHNO_IMG = "https://telegra.ph/file/5d56e3be97cd1ad92997b.mp4"
+TECHNO_IMG = "https://telegra.ph/file/b5d7c890858c43228ce7b.mp4"
 
 __major__ = 0
 __minor__ = 2

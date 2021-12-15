@@ -54,7 +54,7 @@ async def _human_time_duration(seconds):
     command(["start", f"art@{BOT_USERNAME}"]) & filters.private & ~filters.edited
 )
 async def text_(client: Client, message: Message):
-    await message.reply_video(
+    await message.reply_photo(
         TECHNO_IMG, caption= f"""✨ **Welcome {message.from_user.mention()} !**\n
 💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **Allows you to play music and video on groups through the new Telegram's video chats!**
 

@@ -56,9 +56,12 @@ async def play(c: Client, m: Message):
                 InlineKeyboardButton(text="➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url="t.me/BotsClub_AvengerBot?startgroup=true"),
             ],
             [
-                InlineKeyboardButton(text="★ Mᴇɴᴜ ★", callback_data="cbmenu"),
-                InlineKeyboardButton(text="🗑 Cʟᴏsᴇ 🗑", callback_data="cls"),
-            ]
+                InlineKeyboardButton(text="🔱 ᴍᴇɴᴜ 🔱", callback_data="cbmenu"),
+                InlineKeyboardButton(text="🔱 ᴄʟᴏꜱᴇ 🔱", callback_data="cls"),
+            ],
+            [
+                InlineKeyboardButton(text="🔱 ᴏᴡɴᴇʀ 🔱", url=f"https://t.me/mkspali"),
+            ],
         ]
     )
     if m.sender_chat:
@@ -274,9 +277,12 @@ async def stream(c: Client, m: Message):
                 InlineKeyboardButton(text="➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url="t.me/BotsClub_AvengerBot?startgroup=true"),
             ],
             [
-                InlineKeyboardButton(text="★ Mᴇɴᴜ ★", callback_data="cbmenu"),
-                InlineKeyboardButton(text="🗑 Cʟᴏsᴇ 🗑", callback_data="cls"),
-            ]
+                InlineKeyboardButton(text="🔱 ᴍᴇɴᴜ 🔱", callback_data="cbmenu"),
+                InlineKeyboardButton(text="🔱 ᴄʟᴏꜱᴇ 🔱", callback_data="cls"),
+            ],
+            [
+                InlineKeyboardButton(text="🔱 ᴏᴡɴᴇʀ 🔱", url=f"https://t.me/mkspali"),
+            ],
         ]
     )
     if m.sender_chat:

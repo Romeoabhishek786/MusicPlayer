@@ -99,11 +99,11 @@ async def stop(client, m: Message):
         try:
             await call_py.leave_group_call(chat_id)
             clear_queue(chat_id)
-            await m.reply("✅ **streaming has ended.**")
+            await m.reply("━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━\n  **ꜱᴛʀᴇᴀᴍɪɴɢ ʜᴀꜱ ʙᴇᴇɴ ᴇɴᴅᴇᴅ**\n                  ✅ ✅ ✅\n━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━")
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("❌ **nothing in streaming**")
+        await m.reply("━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━\n      **ɴᴏᴛʜɪɴɢ ɪɴ ꜱᴛʀᴇᴀᴍɪɴɢ**\n                  ❎ ❎ ❎\n━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━")
 
 
 @Client.on_message(
@@ -121,7 +121,7 @@ async def pause(client, m: Message):
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("❌ **nothing in streaming**")
+        await m.reply("━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━\n      **ɴᴏᴛʜɪɴɢ ɪɴ ꜱᴛʀᴇᴀᴍɪɴɢ**\n                  ❎ ❎ ❎\n━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━")
 
 
 @Client.on_message(
@@ -139,7 +139,7 @@ async def resume(client, m: Message):
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("❌ **nothing in streaming**")
+        await m.reply("━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━\n      **ɴᴏᴛʜɪɴɢ ɪɴ ꜱᴛʀᴇᴀᴍɪɴɢ**\n                  ❎ ❎ ❎\n━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━")
 
 
 @Client.on_message(
@@ -157,7 +157,7 @@ async def mute(client, m: Message):
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("❌ **nothing in streaming**")
+        await m.reply("━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━\n      **ɴᴏᴛʜɪɴɢ ɪɴ ꜱᴛʀᴇᴀᴍɪɴɢ**\n                  ❎ ❎ ❎\n━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━")
 
 
 @Client.on_message(
@@ -175,7 +175,7 @@ async def unmute(client, m: Message):
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("❌ **nothing in streaming**")
+        await m.reply("━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━\n      **ɴᴏᴛʜɪɴɢ ɪɴ ꜱᴛʀᴇᴀᴍɪɴɢ**\n                  ❎ ❎ ❎\n━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━")
 
 
 @Client.on_callback_query(filters.regex("cbpause"))
@@ -195,7 +195,7 @@ async def cbpause(_, query: CallbackQuery):
         except Exception as e:
             await query.edit_message_text(f"🚫 **error:**\n\n`{e}`", reply_markup=bcl)
     else:
-        await query.answer("❌ nothing is currently streaming", show_alert=True)
+        await query.answer("━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━\n      **ɴᴏᴛʜɪɴɢ ɪɴ ꜱᴛʀᴇᴀᴍɪɴɢ**\n                  ❎ ❎ ❎\n━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━", show_alert=True)
 
 
 @Client.on_callback_query(filters.regex("cbresume"))
@@ -215,7 +215,7 @@ async def cbresume(_, query: CallbackQuery):
         except Exception as e:
             await query.edit_message_text(f"🚫 **error:**\n\n`{e}`", reply_markup=bcl)
     else:
-        await query.answer("❌ nothing is currently streaming", show_alert=True)
+        await query.answer("━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━\n      **ɴᴏᴛʜɪɴɢ ɪɴ ꜱᴛʀᴇᴀᴍɪɴɢ**\n                  ❎ ❎ ❎\n━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━", show_alert=True)
 
 
 @Client.on_callback_query(filters.regex("cbstop"))
@@ -234,7 +234,7 @@ async def cbstop(_, query: CallbackQuery):
         except Exception as e:
             await query.edit_message_text(f"🚫 **error:**\n\n`{e}`", reply_markup=bcl)
     else:
-        await query.answer("❌ nothing is currently streaming", show_alert=True)
+        await query.answer("━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━\n      **ɴᴏᴛʜɪɴɢ ɪɴ ꜱᴛʀᴇᴀᴍɪɴɢ**\n                  ❎ ❎ ❎\n━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━", show_alert=True)
 
 
 @Client.on_callback_query(filters.regex("cbmute"))
@@ -254,7 +254,7 @@ async def cbmute(_, query: CallbackQuery):
         except Exception as e:
             await query.edit_message_text(f"🚫 **error:**\n\n`{e}`", reply_markup=bcl)
     else:
-        await query.answer("❌ nothing is currently streaming", show_alert=True)
+        await query.answer("━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━\n      **ɴᴏᴛʜɪɴɢ ɪɴ ꜱᴛʀᴇᴀᴍɪɴɢ**\n                  ❎ ❎ ❎\n━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━", show_alert=True)
 
 
 @Client.on_callback_query(filters.regex("cbunmute"))
@@ -274,7 +274,7 @@ async def cbunmute(_, query: CallbackQuery):
         except Exception as e:
             await query.edit_message_text(f"🚫 **error:**\n\n`{e}`", reply_markup=bcl)
     else:
-        await query.answer("❌ nothing is currently streaming", show_alert=True)
+        await query.answer("━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━\n      **ɴᴏᴛʜɪɴɢ ɪɴ ꜱᴛʀᴇᴀᴍɪɴɢ**\n                  ❎ ❎ ❎\n━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━", show_alert=True)
 
 
 @Client.on_message(
@@ -293,4 +293,4 @@ async def change_volume(client, m: Message):
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("❌ **nothing in streaming**")
+        await m.reply("━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━\n      **ɴᴏᴛʜɪɴɢ ɪɴ ꜱᴛʀᴇᴀᴍɪɴɢ**\n                  ❎ ❎ ❎\n━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━")

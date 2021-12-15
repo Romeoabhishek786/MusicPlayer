@@ -53,6 +53,9 @@ async def play(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
+                InlineKeyboardButton(text="➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url="t.me/BotsClub_AvengerBot?startgroup=true"),
+            ],
+            [
                 InlineKeyboardButton(text="★ Mᴇɴᴜ ★", callback_data="cbmenu"),
                 InlineKeyboardButton(text="🗑 Cʟᴏsᴇ 🗑", callback_data="cls"),
             ]
@@ -267,6 +270,9 @@ async def stream(c: Client, m: Message):
     chat_id = m.chat.id
     keyboard = InlineKeyboardMarkup(
         [
+            [
+                InlineKeyboardButton(text="➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url="t.me/BotsClub_AvengerBot?startgroup=true"),
+            ],
             [
                 InlineKeyboardButton(text="★ Mᴇɴᴜ ★", callback_data="cbmenu"),
                 InlineKeyboardButton(text="🗑 Cʟᴏsᴇ 🗑", callback_data="cls"),

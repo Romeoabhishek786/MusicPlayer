@@ -148,13 +148,16 @@ async def new_chat(c: Client, m: Message):
             return await m.reply(
                 "❤️ **Thanks for adding me to the Group !**\n"
                 "**Promote me as administrator of the group, otherwise I will not be able to work properly**\n\n"
-                "**Once done, type** /reload\n\n"
-                "**New to szrosebot, Touch the below button to for quick setup guide**",
+                "**Once done, type** /reload\n\n",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("quick setup guide", url="https://t.me/Miss_Akshi_updates/16")
-                        ]
+                            InlineKeyboardButton("➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url="https://t.me/{BOT_USERNAME}?startgroup=true")
+                        ],
+                        [
+                            InlineKeyboardButton("🔱 ꜱᴜᴘᴘᴏʀᴛ 🔱", url=f"https://t.me/{GROUP_SUPPORT}"),
+                            InlineKeyboardButton("🔱 ᴜᴘᴅᴀᴛᴇꜱ 🔱", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                        ],
                     ]
                 )
             )

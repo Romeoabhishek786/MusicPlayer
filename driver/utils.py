@@ -22,9 +22,15 @@ from pytgcalls.types.stream import StreamAudioEnded, StreamVideoEnded
 keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="• Mᴇɴᴜ", callback_data="cbmenu"),
-                InlineKeyboardButton(text="• Cʟᴏsᴇ", callback_data="cls"),
-            ]
+                InlineKeyboardButton(text="➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url="t.me/BotsClub_AvengerBot?startgroup=true"),
+            ],
+            [
+                InlineKeyboardButton(text="🔱 ᴍᴇɴᴜ 🔱", callback_data="cbmenu"),
+                InlineKeyboardButton(text="🔱 ᴄʟᴏꜱᴇ 🔱", callback_data="cls"),
+            ],
+            [
+                InlineKeyboardButton(text="🔱 ᴏᴡɴᴇʀ 🔱", url=f"https://t.me/mkspali"),
+            ],
         ]
     )
 
